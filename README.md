@@ -9,8 +9,12 @@ for example: sh bootlacer.sh MyNewProject
 
 The folder will be created and you will have a Bootstrap setup. You then can generate a bare bones page and add other CDN hosted libraries to your project.
 
+# The only file you need for a Linux machine with BASH is the bootlacer.sh file
 
-# I am lazy and got sick of doing this. Maybe other people will use this too.
+
+
+
+I am lazy and got sick of doing this. Maybe other people will use this too.
 
 I dont care what you do with this script. Just don't try to sell it (not sure who buys my awful code) and don't claim it as your own please.
 
