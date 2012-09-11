@@ -13,8 +13,8 @@
 #  USAGE
 #     -Set your directory below where you want all projects created under. Typical WWW root.
 #     -Run script with your project name after it. Example: sh bootlacer.sh mynewproject
-#     -The "mynewproject" folder will be created for you. You will then be able to add CDN libraries to your page.
-#
+#     -The "mynewproject" folder will be created for you.
+#     -YOu will have options to create a barebones page and add librarires
 #  ADDITIONAL LIBRARIES
 #     -JqueryUI		http://jqueryui.com
 #     -Prototype	http://prototypejs.org/
