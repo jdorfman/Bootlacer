@@ -17,7 +17,7 @@ Again.... I am lazy and got sick of doing this.
      -The "mynewproject" folder will be created for you.
      -YOu will have options to create a barebones page and add librarires
 
-ADDITIONAL LIBRARIES YOU CAN ADD
+#ADDITIONAL LIBRARIES YOU CAN ADD
      -JqueryUI         http://jqueryui.com
      -Prototype        http://prototypejs.org/
      -Chromeframe      http://developers.google.com/chrome/chrome-frame/

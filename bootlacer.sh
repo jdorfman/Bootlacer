@@ -32,7 +32,6 @@ PROJ_DIR="/var/www/html/"
 #
 #
 #
-echo "Got swagger like us..."
 if [ -z "$1" ]
 	then
 	 echo "You must specific a project folder to install to"
@@ -66,44 +65,33 @@ if [ $REPLY == "n" ]; then
 fi
 read -p "Add jQueryUI support? (y/n)"
 if [ $REPLY == "y" ]; then
-        echo "   <script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js'></script>" >> barebones.html
-	echo "Adding jQueryUI"
+        echo "  <script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js'></script>" >> barebones.html
 fi
 read -p "Add Prototype support?(y/n)"
 if [ $REPLY == "y" ]; then
-       echo "    <script src='//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js'></script>" >> barebones.html
-	echo "Adding Prototype"
+        echo "   <script src='//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js'></script>" >> barebones.html
 fi
 read -p "Add Chromeframe support? (y/n)"
 if [ $REPLY == "y" ]; then
-        echo "   <script src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js'></script>" >> barebones.html
-	echo "Adding Chromeframe" 
+        echo "  <script src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js'></script>" >> barebones.html
 fi
 read -p "Add AngularJS support? (y/n)"
 if [ $REPLY == "y" ]; then
-        echo "   <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js'></script>" >> barebones.html
-	echo "Adding AngularJS"
+        echo "  <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js'></script>" >> barebones.html
 fi
 read -p "Add Modernizr support? (y/n)"
 if [ $REPLY == "y" ]; then
-        echo "   <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js'></script>" >> barebones.html 
-	echo "Adding Modernizr"
+        echo "  <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js'></script>" >> barebones.html 
 fi
 read -p "Add an init.js script for your jQuery data? (y/n)"
 if [ $REPLY == "y" ]; then
-        echo "   <script src='init.js'><script>" >> barebones.html
+        echo "  <script src='init.js'><script>" >> barebones.html
 	touch $PROJ_DIR$1/init.js
-	echo "Created init.js"
 fi
 echo "  </body>" >> barebones.html
 echo "</html>" >> barebones.html
 mv barebones.html $PROJ_DIR$1"/index.html"
 echo "Created " $PROJ_DIR$1
 #
-if [ -z "$2" ]
-        then
-         echo "You must specific a project folder to install to"
-         exit 1
-fi
 #
 exit 1
