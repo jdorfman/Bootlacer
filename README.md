@@ -1,5 +1,5 @@
 ---
-title: What the hell is Bootlacer?
+What the hell is Bootlacer?
 ---
 
 [Created by Boxxa](http://twitter.com/boxxa)
